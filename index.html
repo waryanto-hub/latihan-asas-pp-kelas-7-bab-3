@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Soal ASAS - Pendidikan Pancasila Kelas VII Bab 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4fbf7;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    /* Custom scrollbar hijau zamrud agar selaras dan ramah iframe */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #d1fae5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #059669;
+      border-radius: 9999px;
+    }
+    .option-card {
+      transition: all 0.18s ease-in-out;
+    }
+    .option-card:hover:not(.disabled-opt) {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-emerald-200 selection:text-emerald-950">
+
+  <!-- HEADER UTAMA (URUTAN 3 BARIS PERSIS SESUAI PEDOMAN) -->
+  <header class="bg-gradient-to-r from-emerald-900 via-emerald-700 to-teal-700 text-white shadow-md border-b-4 border-emerald-950">
+    <div class="max-w-6xl mx-auto px-4 py-5 sm:py-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-200/40 text-emerald-100 text-xs font-semibold tracking-wider uppercase mb-2">
+        <span>Asesmen Sumatif Akhir Semester</span>
+        <span>•</span>
+        <span>Literasi &amp; Numerasi HOTS</span>
+      </div>
+      <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight uppercase drop-shadow-sm">
+        LATIHAN SOAL ASAS
+      </h1>
+      <h2 class="text-base sm:text-lg md:text-xl font-bold text-emerald-100 mt-0.5 uppercase tracking-wide">
+        PENDIDIKAN PANCASILA KELAS VII
+      </h2>
+      <p class="text-xs sm:text-sm md:text-base font-medium text-teal-100 mt-1 max-w-3xl mx-auto">
+        BAB 3 : PATUH TERHADAP NORMA
+      </p>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="flex-grow max-w-6xl w-full mx-auto px-3 sm:px-5 py-5">
+
+    <!-- LAYAR AWAL: PILIH MODE -->
+    <section id="start-screen" class="bg-white rounded-2xl shadow-sm border border-emerald-200 p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-xs uppercase tracking-wider mb-2">
+          Petunjuk &amp; Pemilihan Mode
+        </span>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+          Selamat Datang di Ruang Latihan Interaktif
+        </h3>
+        <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-2xl mx-auto">
+          Paket evaluasi ini memuat <strong>25 soal HOTS (C3–C6)</strong> dengan tingkat kesulitan Sedang hingga Sangat Sulit, terdiri atas <strong>18 Pilihan Ganda</strong> dan <strong>7 Pilihan Ganda Kompleks</strong> berbasis wacana kisah, tabel data, grafik survei kedisiplinan, dan ilustrasi. Urutan soal dan posisi opsi jawaban otomatis diacak di setiap sesi!
+        </p>
+      </div>
+
+      <!-- Ringkasan Komposisi -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-7">
+        <div class="bg-emerald-50/90 border border-emerald-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-emerald-700 font-semibold uppercase">Total Butir</div>
+          <div class="text-xl font-extrabold text-emerald-950 mt-0.5">25 Soal</div>
+        </div>
+        <div class="bg-emerald-50/90 border border-emerald-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-emerald-700 font-semibold uppercase">Bentuk Soal</div>
+          <div class="text-sm sm:text-base font-extrabold text-emerald-950 mt-1">18 PG &amp; 7 PGK</div>
+        </div>
+        <div class="bg-emerald-50/90 border border-emerald-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-emerald-700 font-semibold uppercase">Level Kognitif</div>
+          <div class="text-xl font-extrabold text-emerald-950 mt-0.5">C3 – C6</div>
+        </div>
+        <div class="bg-emerald-50/90 border border-emerald-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-emerald-700 font-semibold uppercase">Waktu Latihan</div>
+          <div class="text-xl font-extrabold text-emerald-950 mt-0.5">60 Menit</div>
+        </div>
+      </div>
+
+      <!-- Pilihan Mode -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        <!-- Mode Belajar -->
+        <div class="rounded-2xl border-2 border-teal-300 bg-gradient-to-b from-teal-50/80 to-white p-5 flex flex-col justify-between hover:border-emerald-600 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-teal-600 text-white text-xs font-bold uppercase tracking-wide">
+                Direkomendasikan untuk Pemahaman
+              </span>
+              <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-slate-900">Mode Belajar</h4>
+            <ul class="text-sm text-slate-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-teal-600 font-bold">✓</span>
+                <span>Tanpa batas waktu (timer nonaktif) agar kamu bisa mencermati setiap bacaan dan gambar dengan tenang.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-teal-600 font-bold">✓</span>
+                <span>Tersedia tombol <strong>"Periksa Jawaban"</strong> di setiap nomor soal.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-teal-600 font-bold">✓</span>
+                <span>Langsung menampilkan status <strong>Benar / Salah</strong> beserta kunci dan pembahasan lengkap.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('belajar')" class="mt-6 w-full py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Belajar →
+          </button>
+        </div>
+
+        <!-- Mode Latihan -->
+        <div class="rounded-2xl border-2 border-emerald-400 bg-gradient-to-b from-emerald-50/80 to-white p-5 flex flex-col justify-between hover:border-emerald-800 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-emerald-800 text-emerald-50 text-xs font-bold uppercase tracking-wide">
+                Simulasi Ujian ASAS
+              </span>
+              <svg class="w-7 h-7 text-emerald-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-slate-900">Mode Latihan (Ujian)</h4>
+            <ul class="text-sm text-slate-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-700 font-bold">✓</span>
+                <span>Dilengkapi penghitung waktu mundur <strong>60 menit</strong> layaknya ujian sekolah sesungguhnya.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-700 font-bold">✓</span>
+                <span>Kunci jawaban &amp; pembahasan disembunyikan selama pengerjaan soal berlangsung.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-700 font-bold">✓</span>
+                <span>Tersedia fitur <strong>Tandai Ragu-Ragu</strong>, rekap nilai akhir, dan tinjauan pembahasan lengkap.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('latihan')" class="mt-6 w-full py-3 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 active:bg-emerald-950 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Latihan →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYAR KUIS AKTIF -->
+    <section id="quiz-screen" class="hidden">
+      <!-- Top Control Bar -->
+      <div class="bg-white rounded-2xl border border-emerald-200 shadow-sm p-3 sm:p-4 mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2 sm:gap-3">
+          <span id="mode-badge" class="px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300">
+            MODE BELAJAR
+          </span>
+          <span id="progress-text" class="text-xs sm:text-sm font-semibold text-slate-600">
+            Terjawab: 0 / 25
+          </span>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Timer (Hanya muncul di Mode Latihan) -->
+          <div id="timer-box" class="hidden items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 font-mono font-bold text-sm">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="timer-display">60:00</span>
+          </div>
+
+          <button onclick="openSwitchModal()" class="px-3 py-1.5 rounded-xl border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 text-xs sm:text-sm font-semibold transition cursor-pointer">
+            Ganti Mode / Reset
+          </button>
+
+          <button id="finish-btn" onclick="openFinishModal()" class="px-3.5 py-1.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-xs sm:text-sm font-bold shadow-sm transition cursor-pointer">
+            Selesai &amp; Nilai
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Utama: Kartu Soal (Kiri/Atas) + Navigasi Nomor (Kanan/Bawah) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        
+        <!-- Area Soal (8 Kolom) -->
+        <div class="lg:col-span-8 bg-white rounded-2xl border border-emerald-200 shadow-sm p-4 sm:p-6">
+          <!-- Header Soal: Nomor, Tipe, Level Kognitif, Kesulitan -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-emerald-100">
+            <div class="flex items-center gap-2">
+              <span id="q-number-badge" class="px-3 py-1 rounded-xl bg-emerald-700 text-white font-extrabold text-sm">
+                Soal 1 dari 25
+              </span>
+              <span id="q-type-badge" class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-900 font-bold text-xs">
+                Pilihan Ganda
+              </span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span id="q-cog-badge" class="px-2.5 py-1 rounded-lg bg-teal-50 text-teal-800 border border-teal-200 font-bold text-xs">
+                C4 (Analisis)
+              </span>
+              <span id="q-diff-badge" class="px-2.5 py-1 rounded-lg bg-lime-50 text-lime-800 border border-lime-200 font-bold text-xs">
+                Sulit
+              </span>
+            </div>
+          </div>
+
+          <!-- Instruksi Khusus PG Kompleks -->
+          <div id="pgk-instruction" class="hidden mb-4 p-3 rounded-xl bg-teal-50 border-l-4 border-teal-600 text-teal-950 text-xs sm:text-sm font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5 text-teal-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="pgk-instruction-text">PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!</span>
+          </div>
+
+          <!-- Kontainer Stimulus -->
+          <div id="stimulus-container" class="mb-5"></div>
+
+          <!-- Pertanyaan -->
+          <div id="question-text" class="text-slate-900 font-semibold text-sm sm:text-base leading-relaxed mb-4"></div>
+
+          <!-- Opsi Jawaban -->
+          <div id="options-container" class="space-y-2.5"></div>
+
+          <!-- Tombol Aksi Soal (Mode Belajar: Periksa Jawaban | Mode Latihan: Tandai Ragu-Ragu) -->
+          <div class="mt-5 pt-4 border-t border-emerald-100 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <button id="check-answer-btn" onclick="checkCurrentAnswer()" class="hidden px-4 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Periksa Jawaban
+              </button>
+              <label id="doubt-checkbox-wrap" class="hidden inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm font-semibold cursor-pointer select-none">
+                <input type="checkbox" id="doubt-checkbox" onchange="toggleDoubt()" class="w-4 h-4 accent-amber-600 rounded cursor-pointer" />
+                <span>Tandai Ragu-Ragu</span>
+              </label>
+            </div>
+
+            <div class="flex items-center gap-2 ml-auto">
+              <button id="prev-btn" onclick="prevQuestion()" class="px-3.5 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 disabled:opacity-40 text-slate-700 font-semibold text-xs sm:text-sm transition cursor-pointer">
+                ← Sebelumnya
+              </button>
+              <button id="next-btn" onclick="nextQuestion()" class="px-4 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 disabled:opacity-40 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Berikutnya →
+              </button>
+            </div>
+          </div>
+
+          <!-- Kotak Pembahasan (Muncul saat dicek di Mode Belajar atau saat Review Mode Latihan) -->
+          <div id="explanation-box" class="hidden mt-5 rounded-2xl p-4 sm:p-5 border-2">
+            <div class="flex items-center gap-2 mb-2">
+              <span id="exp-status-icon" class="text-lg"></span>
+              <h4 id="exp-status-title" class="font-extrabold text-sm sm:text-base"></h4>
+            </div>
+            <p id="exp-key-text" class="text-xs sm:text-sm font-bold mb-2"></p>
+            <div id="exp-detail-text" class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-1.5"></div>
+          </div>
+        </div>
+
+        <!-- Panel Navigasi Nomor Soal (4 Kolom) -->
+        <aside class="lg:col-span-4 bg-white rounded-2xl border border-emerald-200 shadow-sm p-4 sm:p-5 lg:sticky lg:top-4">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Navigasi Nomor Soal</h3>
+            <span class="text-xs font-semibold text-emerald-700">1 – 25</span>
+          </div>
+
+          <div id="nav-grid" class="grid grid-cols-5 gap-2 mb-4"></div>
+
+          <!-- Legenda Warna -->
+          <div class="border-t border-emerald-100 pt-3 space-y-1.5 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-emerald-700 inline-block"></span>
+              <span>Sedang dibuka</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-emerald-100 border border-emerald-400 inline-block"></span>
+              <span>Sudah dijawab</span>
+            </div>
+            <div id="legend-doubt" class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-amber-300 border border-amber-600 inline-block"></span>
+              <span>Ditandai ragu-ragu</span>
+            </div>
+            <div id="legend-eval" class="hidden space-y-1.5">
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-emerald-500 inline-block"></span>
+                <span>Jawaban Benar</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-rose-500 inline-block"></span>
+                <span>Jawaban Salah</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-slate-100 border border-slate-300 inline-block"></span>
+              <span>Belum dijawab</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LAYAR HASIL AKHIR (MODE LATIHAN / REKAP) -->
+    <section id="result-screen" class="hidden bg-white rounded-2xl border border-emerald-200 shadow-sm p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center border-b border-emerald-100 pb-6">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 font-bold text-xs uppercase tracking-wider mb-2">
+          Hasil Evaluasi ASAS Bab 3
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Rekapitulasi Capaian Belajar</h3>
+        <p id="result-subtitle" class="text-sm text-slate-600 mt-1">
+          Berikut adalah hasil analisis pengerjaan soal literasi dan numerasi Pendidikan Pancasila Kelas VII Bab 3.
+        </p>
+
+        <!-- Kartu Skor Utama -->
+        <div class="mt-6 inline-flex flex-col items-center justify-center w-40 h-40 rounded-full bg-gradient-to-br from-emerald-500 via-emerald-700 to-teal-900 text-white shadow-lg border-4 border-emerald-100">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-100">Skor Akhir</span>
+          <span id="final-score" class="text-4xl sm:text-5xl font-extrabold mt-0.5">0</span>
+          <span id="final-predicate" class="text-xs font-semibold mt-1 px-2.5 py-0.5 rounded-full bg-emerald-950/50">Predikat</span>
+        </div>
+      </div>
+
+      <!-- Rincian Statistik -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-emerald-700 uppercase">Jawaban Benar</div>
+          <div id="stat-correct" class="text-2xl font-extrabold text-emerald-900 mt-1">0</div>
+        </div>
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-rose-700 uppercase">Jawaban Salah</div>
+          <div id="stat-wrong" class="text-2xl font-extrabold text-rose-900 mt-1">0</div>
+        </div>
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-teal-700 uppercase">PG Biasa (18)</div>
+          <div id="stat-pg" class="text-2xl font-extrabold text-teal-950 mt-1">0/18</div>
+        </div>
+        <div class="bg-lime-50 border border-lime-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-lime-700 uppercase">PG Kompleks (7)</div>
+          <div id="stat-pgk" class="text-2xl font-extrabold text-lime-950 mt-1">0/7</div>
+        </div>
+      </div>
+
+      <!-- Analisis Capaian Submateri & HOTS -->
+      <div class="bg-emerald-50/60 border border-emerald-200 rounded-2xl p-4 sm:p-5 mb-6">
+        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base mb-3">Analisis Penguasaan Subbab Materi</h4>
+        <div id="topic-analysis" class="space-y-3 text-xs sm:text-sm"></div>
+      </div>
+
+      <!-- Tombol Aksi Hasil -->
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button onclick="enterReviewMode()" class="px-5 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+          Lihat Pembahasan Lengkap (1–25)
+        </button>
+        <button onclick="resetToHome()" class="px-5 py-3 rounded-xl border-2 border-emerald-400 bg-white hover:bg-emerald-50 text-emerald-900 font-bold text-sm sm:text-base transition cursor-pointer">
+          Ulangi / Pilih Mode Lain
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL KONFIRMASI KUSTOM (PENGGANTI ALERT/CONFIRM) -->
+  <div id="custom-modal" class="hidden fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl border border-emerald-200 max-w-md w-full p-5 sm:p-6 shadow-xl">
+      <h4 id="modal-title" class="text-lg font-extrabold text-slate-900">Konfirmasi</h4>
+      <p id="modal-message" class="text-sm text-slate-600 mt-2 leading-relaxed"></p>
+      <div class="mt-5 flex items-center justify-end gap-2.5">
+        <button onclick="closeModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 cursor-pointer">
+          Batal
+        </button>
+        <button id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm cursor-pointer">
+          Ya, Lanjutkan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER WAJIB SESUAI PEDOMAN -->
+  <footer class="bg-emerald-950 text-emerald-100 border-t-4 border-emerald-500 mt-8">
+    <div class="max-w-6xl mx-auto px-4 py-5 text-center text-xs sm:text-sm space-y-1">
+      <p class="font-medium text-emerald-200">
+        Sumber: Buku Siswa Pendidikan Pancasila SMP/MTs Kelas VII (Kemendikbudristek, 2023)
+      </p>
+      <p class="font-bold text-emerald-400 tracking-wide">
+        <a href="https://www.pakwaronline.com" target="_blank" rel="noopener noreferrer" class="hover:underline">www.pakwaronline.com</a>
+      </p>
+      <p class="text-emerald-300/80 italic font-medium">
+        Shared &amp; Educated
+      </p>
+    </div>
+  </footer>
+
+  <!-- DATA & LOGIKA APLIKASI -->
+  <script>
+    /**
+     * BANK SOAL ASAS PENDIDIKAN PANCASILA KELAS VII - BAB 3
+     * "Patuh Terhadap Norma"
+     * Sebaran:
+     * - Subbab A (5 soal: 4 PG + 1 PGK) -> Manusia sebagai Makhluk Tuhan YME, Makhluk Individu, dan Makhluk Sosial
+     * - Subbab B (6 soal: 4 PG + 2 PGK) -> Pengertian, Syarat, dan Fungsi Norma
+     * - Subbab C (7 soal: 5 PG + 2 PGK) -> Macam-Macam Norma dan Hubungan Antarnorma
+     * - Subbab D (7 soal: 5 PG + 2 PGK) -> Sebab Terjadinya Pelanggaran Norma & Bertindak Sesuai Norma
+     */
+    const baseQuestionsData = [
+      // ==================== SUBBAB A: MAKHLUK TUHAN YME, INDIVIDU, DAN SOSIAL (5 SOAL: 4 PG + 1 PGK) ====================
+
+      // SOAL 1 (C4 - Sedang - PG)
+      {
+        id: 1,
+        subbab: "A. Manusia sebagai Makhluk Tuhan YME, Individu, dan Sosial",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Simak kutipan kisah inspiratif tentang kebiasaan "Tiga Kata Ajaib" berikut ini!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Ika, seorang siswi kelas VII SMP Persatuan Bangsa, selalu membiasakan tiga kata ajaib dalam kesehariannya: mengucapkan <em>"tolong"</em> saat membutuhkan bantuan, <em>"terima kasih"</em> ketika menerima kebaikan orang lain, serta <em>"maaf"</em> apabila melakukan kesalahan—baik kepada orang yang lebih tua, teman sebaya, maupun adik kelas. Menurutnya, mengucapkan maaf bukanlah tanda kelemahan, melainkan keberanian mengakui kekeliruan secara jujur.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan kisah tersebut, dampak utama dari pembiasaan mengucapkan kata 'tolong, terima kasih, dan maaf' dalam kehidupan bermasyarakat adalah ....",
+        options: [
+          "mempererat hubungan persaudaraan serta mencegah timbulnya perselisihan antaranggota masyarakat",
+          "menjadikan seseorang lebih mudah memperoleh bantuan materi tanpa perlu berusaha secara mandiri",
+          "menggantikan fungsi aturan tertulis di sekolah karena seluruh warga sudah memiliki sopan santun",
+          "menunjukkan keunggulan pribadi seseorang dibandingkan teman sebaya yang jarang mengucapkan salam"
+        ],
+        answer: [0],
+        explanation: "Kebiasaan mengucapkan 'tolong, terima kasih, dan maaf' secara tulus merupakan wujud penghargaan terhadap sesama manusia yang mempererat hubungan persaudaraan dan menciptakan keharmonisan sosial."
+      },
+
+      // SOAL 2 (C4 - Sulit - PG)
+      {
+        id: 2,
+        subbab: "A. Manusia sebagai Makhluk Tuhan YME, Individu, dan Sosial",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-teal-50/70 border border-teal-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-teal-950 mb-2">Cermati paparan mengenai kedudukan manusia sebagai makhluk monodualis berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Sesuai kodratnya, manusia memiliki kedudukan sebagai makhluk <em>monodualis</em>, yakni perpaduan antara makhluk individu yang memiliki ciri khas lahiriah-rohaniah serta kebutuhan pribadi, dan makhluk sosial yang tidak mampu hidup menyendiri sehingga selalu membutuhkan interaksi dan kerja sama dengan sesama untuk memenuhi kebutuhan fisik maupun nonfisiknya.
+            </p>
+          </div>
+        `,
+        question: "Keterkaitan antara kodrat manusia sebagai makhluk sosial dengan lahirnya norma dalam kehidupan masyarakat adalah ....",
+        options: [
+          "interaksi sosial yang berulang membutuhkan aturan bersama agar pemenuhan kebutuhan tidak saling merugikan",
+          "kebutuhan pribadi setiap individu selalu sama sehingga aturan dibuat untuk membatasi kerja sama warga",
+          "manusia yang cerdas mampu memenuhi seluruh kebutuhannya sendiri tanpa memerlukan aturan bermasyarakat",
+          "norma hanya diberlakukan pada kelompok masyarakat yang memiliki perbedaan ciri lahiriah yang mencolok"
+        ],
+        answer: [0],
+        explanation: "Sebagai makhluk sosial, manusia terus berinteraksi untuk memenuhi kebutuhannya. Hubungan timbal balik yang berlangsung berulang melahirkan norma guna melindungi kepentingan setiap orang agar tidak saling berbenturan."
+      },
+
+      // SOAL 3 (C3 - Sedang - PG)
+      {
+        id: 3,
+        subbab: "A. Manusia sebagai Makhluk Tuhan YME, Individu, dan Sosial",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-emerald-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan tabel perbandingan pemenuhan kebutuhan manusia berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-emerald-100 text-emerald-950">
+                  <th class="p-2 border border-emerald-200">Kategori Kebutuhan</th>
+                  <th class="p-2 border border-emerald-200">Sifat Pemenuhan</th>
+                  <th class="p-2 border border-emerald-200">Contoh dalam Kehidupan</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-emerald-200 font-semibold">Kebutuhan Fisik</td>
+                  <td class="p-2 border border-emerald-200">Harus terpenuhi secara berkala setiap waktu</td>
+                  <td class="p-2 border border-emerald-200">Makanan bergizi, air bersih, pakaian, dan tempat tinggal</td>
+                </tr>
+                <tr class="bg-emerald-50/40">
+                  <td class="p-2 border border-emerald-200 font-semibold">Kebutuhan Nonfisik</td>
+                  <td class="p-2 border border-emerald-200">Berkaitan dengan ketenangan batin dan pergaulan</td>
+                  <td class="p-2 border border-emerald-200">Rasa aman, kedamaian, kasih sayang, dan dihargai teman</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Ketika seluruh siswa di kelas VII-A sepakat tidak mengejek teman serta menjaga ketenangan selama pelajaran berlangsung, kesepakatan tersebut secara langsung membantu memenuhi ....",
+        options: [
+          "kebutuhan nonfisik siswa berupa rasa aman, nyaman, dan kedamaian dalam belajar bersama",
+          "kebutuhan fisik siswa yang bersifat objektif agar terhindar dari gangguan kesehatan jasmani",
+          "keinginan pribadi sebagian siswa untuk menonjolkan keunggulan intelektual di depan guru",
+          "kewajiban pengurus kelas untuk menggantikan peran orang tua dalam mendidik anak di rumah"
+        ],
+        answer: [0],
+        explanation: "Rasa aman, bahagia, damai, dan dihargai merupakan kebutuhan nonfisik manusia sebagai makhluk individu dan sosial yang dapat terwujud melalui kepatuhan terhadap norma bersama."
+      },
+
+      // SOAL 4 (C4 - Sulit - PGK)
+      {
+        id: 4,
+        subbab: "A. Manusia sebagai Makhluk Tuhan YME, Individu, dan Sosial",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati uraian mengenai keistimewaan manusia sebagai makhluk Tuhan Yang Maha Esa berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Manusia diciptakan Tuhan Yang Maha Esa sebagai makhluk paling sempurna karena dikaruniai akal budi dan pikiran untuk memilah tindakan yang benar atau salah serta menyelesaikan persoalan tanpa kekerasan fisik. Namun, manusia juga menyadari keterbatasan dirinya di hadapan Tuhan Yang Maha Esa.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, pilihlah dua konsekuensi logis dari kedudukan manusia sebagai makhluk Tuhan Yang Maha Esa!",
+        options: [
+          "Setiap manusia berkewajiban menjalankan ibadah sesuai agama dan kepercayaannya sebagai wujud syukur",
+          "Akal dan pikiran manusia digunakan untuk menjaga kelestarian alam serta menyelesaikan konflik secara damai",
+          "Kesempurnaan akal membuat manusia bebas bertindak sesuai keinginannya tanpa terikat aturan masyarakat",
+          "Kelebihan kemampuan intelektual seseorang menjadikannya berhak memaksakan pendapat kepada sesama"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 dan 2 benar: karunia akal budi dan kesadaran akan keterbatasan diri mendorong manusia beribadah kepada Tuhan YME serta menggunakan akalnya untuk kemakmuran alam dan penyelesaian masalah secara damai."
+      },
+
+      // SOAL 5 (C5 - Sulit - PG)
+      {
+        id: 5,
+        subbab: "A. Manusia sebagai Makhluk Tuhan YME, Individu, dan Sosial",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-lime-50/70 border border-lime-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-lime-950 mb-2">Perhatikan perbedaan antara 'kebutuhan' dan 'keinginan' dalam kehidupan sehari-hari berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <em>Kebutuhan</em> adalah sesuatu yang wajib didapatkan secara objektif demi kelangsungan hidup (misalnya makan saat lapar), sedangkan <em>keinginan</em> bersifat subjektif dan dipengaruhi gaya hidup (misalnya harus makan di restoran mewah dengan menu tertentu).
+            </p>
+          </div>
+        `,
+        question: "Evaluasi paling tepat apabila seseorang memaksakan pemenuhan 'keinginan' gaya hidupnya dengan cara melanggar aturan yang berlaku adalah ....",
+        options: [
+          "tindakan tersebut keliru karena keinginan bersifat subjektif sehingga tidak boleh mengorbankan norma dan hak orang lain",
+          "tindakan tersebut dapat dimaklumi selama pemenuhan keinginan dilakukan untuk mengikuti tren pergaulan remaja",
+          "keinginan dan kebutuhan memiliki kedudukan hukum yang sama sehingga keduanya wajib dipenuhi dengan cara apa pun",
+          "norma masyarakat hanya berfungsi membatasi kebutuhan pokok warga tanpa mengatur perilaku gaya hidup individu"
+        ],
+        answer: [0],
+        explanation: "Keinginan bersifat subjektif dan dipengaruhi gaya hidup. Memaksakan keinginan dengan melanggar norma adalah kekeliruan karena norma hadir untuk mengendalikan perilaku manusia agar tidak merugikan sesama."
+      },
+
+      // ==================== SUBBAB B: PENGERTIAN, SYARAT, DAN FUNGSI NORMA (6 SOAL: 4 PG + 2 PGK) ====================
+
+      // SOAL 6 (C4 - Sedang - PG)
+      {
+        id: 6,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-teal-50/70 border border-teal-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-teal-950 mb-2">Perhatikan ilustrasi perbandingan antara peta digital (<em>maps</em>) dan norma dalam kehidupan berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-teal-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#f0fdfa"/>
+                  <!-- Peta Kiri -->
+                  <rect x="14" y="20" width="68" height="84" rx="8" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+                  <path d="M26 86 Q48 70 68 38" stroke="#10b981" stroke-width="3" stroke-dasharray="4 3" fill="none"/>
+                  <circle cx="68" cy="38" r="5" fill="#dc2626"/>
+                  <text x="48" y="96" font-size="6.8" font-weight="bold" fill="#0f766e" text-anchor="middle">PETA DIGITAL</text>
+                  <!-- Norma Kanan -->
+                  <rect x="98" y="20" width="68" height="84" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+                  <line x1="112" y1="42" x2="152" y2="42" stroke="#059669" stroke-width="2.5"/>
+                  <line x1="112" y1="56" x2="152" y2="56" stroke="#059669" stroke-width="2.5"/>
+                  <line x1="112" y1="70" x2="140" y2="70" stroke="#059669" stroke-width="2.5"/>
+                  <text x="132" y="96" font-size="6.8" font-weight="bold" fill="#064e3b" text-anchor="middle">NORMA SOSIAL</text>
+                  <text x="90" y="126" font-size="7" font-weight="bold" fill="#065f46" text-anchor="middle">SAMA-SAMA PENUNTUN ARAH</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Analogi Peta &amp; Norma (Adaptasi KBBI, 2023)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Ketika bepergian ke wilayah yang belum pernah dikunjungi, seseorang memanfaatkan aplikasi peta digital (<em>maps</em>) agar tidak tersesat menuju lokasi tujuan. Demikian pula dalam kehidupan bermasyarakat, manusia membutuhkan norma sebagai panduan, tatanan, dan pengendali tingkah laku yang mengikat warga kelompok.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Persamaan mendasar antara fungsi peta digital dan fungsi norma bagi kehidupan manusia berdasarkan ilustrasi tersebut adalah ....",
+        options: [
+          "keduanya berperan menjadi penuntun dan pedoman arah agar manusia tidak tersesat dalam bertindak",
+          "keduanya memerlukan koneksi jaringan internet agar dapat diakses oleh seluruh warga masyarakat",
+          "keduanya memuat sanksi pidana penjara bagi siapa saja yang memilih jalur berbeda dari ketentuan",
+          "keduanya hanya dibutuhkan apabila seseorang sedang berada di luar daerah tempat tinggal asalnya"
+        ],
+        answer: [0],
+        explanation: "Peta digital menuntun arah perjalanan fisik agar tidak tersesat, sedangkan norma menjadi penuntun dan pedoman tingkah laku sosial agar tindakan manusia tetap benar, tertib, dan tidak merugikan sesama."
+      },
+
+      // SOAL 7 (C4 - Sulit - PGK)
+      {
+        id: 7,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati uraian mengenai empat syarat berlakunya norma dalam kehidupan masyarakat berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Agar norma dapat berjalan efektif menjadi pedoman bertingkah laku sehari-hari, terdapat empat syarat pokok yang harus terpenuhi, yakni memuat perintah yang dianjurkan, memuat larangan yang harus ditinggalkan, memiliki sanksi bagi pelanggar, serta bersifat mengikat dan memaksa untuk dipatuhi setiap anggota kelompok.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan keempat syarat berlakunya norma tersebut, pilihlah tiga analisis yang paling tepat!",
+        options: [
+          "Keberadaan sanksi diperlukan untuk memberikan efek jera agar pelanggar tidak mengulangi perbuatan merugikan",
+          "Sifat mengikat dan memaksa berarti norma wajib dipatuhi seluruh anggota kelompok tanpa pilih kasih",
+          "Perintah dan larangan memberikan batas tegas antara perilaku yang patut dilakukan dan yang harus dihindari",
+          "Setiap norma masyarakat wajib dicetak dalam bentuk buku undang-undang negara agar sah dipatuhi warga"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 benar sesuai empat syarat berlakunya norma. Pernyataan 4 keliru karena norma tidak wajib tertulis (contohnya norma kesopanan, kesusilaan, dan adat tidak tertulis tetap mengikat)."
+      },
+
+      // SOAL 8 (C3 - Sedang - PG)
+      {
+        id: 8,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan informasi mengenai peran Satuan Tugas Pelaksana Pembinaan Kesiswaan (STP2K) di sekolah berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Di beberapa sekolah dibentuk tim STP2K di bawah koordinasi Wakil Kepala Sekolah Bidang Kesiswaan yang bertugas melakukan pencegahan, memberikan konseling, serta menegakkan tata tertib sekolah guna membentuk karakter peserta didik yang disiplin.
+            </p>
+          </div>
+        `,
+        question: "Langkah pembinaan oleh tim kesiswaan melalui konseling bagi siswa yang melanggar tata tertib mencerminkan fungsi norma di sekolah, yaitu ....",
+        options: [
+          "mengendalikan perilaku warga sekolah agar tercipta suasana belajar yang tertib, aman, dan berkeadilan",
+          "mencari kesalahan peserta didik sebanyak-banyaknya untuk dikeluarkan dari satuan pendidikan",
+          "menggantikan tugas guru mata pelajaran dalam memberikan penilaian akademik pada akhir semester",
+          "membatasi kebebasan siswa dalam mengikuti kegiatan ekstrakurikuler dan organisasi siswa di sekolah"
+        ],
+        answer: [0],
+        explanation: "Fungsi utama norma (termasuk tata tertib sekolah) adalah menjadi pengendali perilaku, menciptakan ketertiban dan keamanan, serta menjamin keadilan bagi seluruh warga sekolah."
+      },
+
+      // SOAL 9 (C5 - Sangat Sulit - PG)
+      {
+        id: 9,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati tiga definisi norma menurut para pakar hukum berikut!</p>
+            <ul class="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc pl-5">
+              <li><strong>Dewa Gede Sudika Mangku:</strong> Pedoman yang dijadikan patokan untuk bertindak benar dan tepat agar tercipta kehidupan tenteram, tertib, dan terjamin.</li>
+              <li><strong>Endrik Safudin:</strong> Kaidah sosial yang menjadi aturan hidup bagi setiap manusia untuk bertingkah laku dalam kehidupan bersama.</li>
+              <li><strong>Maria Farida Indrati Soeprapto:</strong> Ukuran yang dijadikan patokan bagi seseorang dalam hubungannya dengan sesama dan lingkungannya.</li>
+            </ul>
+          </div>
+        `,
+        question: "Dari ketiga definisi pakar tersebut, simpulan evaluatif paling tepat yang menjelaskan hubungan antara keberadaan norma dan keadilan sosial adalah ....",
+        options: [
+          "norma memberi batasan hak dan kewajiban tiap orang secara jelas sehingga mencegah tindakan sewenang-wenang",
+          "norma berfungsi menghapus seluruh perbedaan kebutuhan antarindividu agar masyarakat hidup seragam",
+          "keadilan sosial hanya dapat diwujudkan apabila setiap pelanggaran norma langsung dijatuhi hukuman penjara",
+          "patokan bertingkah laku dalam masyarakat ditentukan sepenuhnya oleh kelompok warga yang paling senior"
+        ],
+        answer: [0],
+        explanation: "Ketiga ahli sepakat bahwa norma adalah patokan bertindak dalam relasi sosial. Dengan adanya ukuran yang jelas, setiap orang memperoleh hak dan menjalankan kewajibannya secara adil tanpa kesewenang-wenangan."
+      },
+
+      // SOAL 10 (C4 - Sulit - PGK)
+      {
+        id: 10,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-teal-50/70 border border-teal-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-teal-950 mb-2">Perhatikan grafik hasil survei persepsi 120 siswa SMP Harapan mengenai manfaat utama tata tertib sekolah berikut!</p>
+            <svg class="w-full max-w-lg h-44 mx-auto" viewBox="0 0 420 175" fill="none">
+              <rect width="420" height="175" rx="10" fill="#ecfdf5"/>
+              <line x1="160" y1="22" x2="160" y2="145" stroke="#065f46" stroke-width="1.5"/>
+              <!-- Bar 1: Suasana Belajar Nyaman 94% -->
+              <text x="153" y="42" font-size="8.5" font-weight="bold" fill="#1e293b" text-anchor="end">Suasana Belajar Nyaman</text>
+              <rect x="160" y="31" width="216" height="16" rx="4" fill="#047857"/>
+              <text x="381" y="42" font-size="8.5" font-weight="bold" fill="#064e3b">94%</text>
+              <!-- Bar 2: Perlindungan Perundungan 88% -->
+              <text x="153" y="72" font-size="8.5" font-weight="bold" fill="#1e293b" text-anchor="end">Perlindungan dari Bullying</text>
+              <rect x="160" y="61" width="202" height="16" rx="4" fill="#059669"/>
+              <text x="367" y="72" font-size="8.5" font-weight="bold" fill="#064e3b">88%</text>
+              <!-- Bar 3: Keadilan Perlakuan 82% -->
+              <text x="153" y="102" font-size="8.5" font-weight="bold" fill="#1e293b" text-anchor="end">Perlakuan Adil Semua Siswa</text>
+              <rect x="160" y="91" width="188" height="16" rx="4" fill="#0d9488"/>
+              <text x="353" y="102" font-size="8.5" font-weight="bold" fill="#064e3b">82%</text>
+              <!-- Bar 4: Kebiasaan Disiplin Waktu 79% -->
+              <text x="153" y="132" font-size="8.5" font-weight="bold" fill="#1e293b" text-anchor="end">Melatih Disiplin Waktu</text>
+              <rect x="160" y="121" width="181" height="16" rx="4" fill="#10b981"/>
+              <text x="346" y="132" font-size="8.5" font-weight="bold" fill="#064e3b">79%</text>
+              <text x="210" y="164" font-size="7.5" fill="#047857" text-anchor="middle">Sumber: Survei Persepsi Tata Tertib SMP Harapan (2024)</text>
+            </svg>
+          </div>
+        `,
+        question: "Berdasarkan data pada grafik survei di atas, pilihlah dua kesimpulan analisis yang paling tepat!",
+        options: [
+          "Sebagian besar siswa menyadari bahwa norma sekolah berfungsi menciptakan ketertiban dan kenyamanan belajar",
+          "Fungsi norma sebagai pelindung dari perundungan menempati urutan kedua tertinggi menurut persepsi siswa",
+          "Selisih persentase antara manfaat suasana belajar nyaman dan melatih disiplin waktu adalah sebesar 25%",
+          "Mayoritas siswa menganggap tata tertib sekolah menghambat keadilan perlakuan antarpelajar di kelas"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 benar (94% tertinggi) dan pernyataan 2 benar (88% urutan kedua setelah 94%). Pernyataan 3 keliru karena selisihnya 94% - 79% = 15%, bukan 25%."
+      },
+
+      // SOAL 11 (C6 - Sangat Sulit - PG)
+      {
+        id: 11,
+        subbab: "B. Pengertian, Syarat, dan Fungsi Norma",
+        type: "pg",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati persoalan pelanggaran aturan di area kantin sekolah berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Setiap jam istirahat, kantin SMP Cendekia selalu penuh sesak sehingga beberapa siswa menyerobot antrean dan meninggalkan bungkus makanan di meja makan. Pengurus OSIS diminta merancang aturan kantin yang efektif memenuhi syarat berlakunya norma.
+            </p>
+          </div>
+        `,
+        question: "Rancangan aturan kantin paling lengkap yang memenuhi seluruh syarat berlakunya norma (perintah, larangan, sanksi, dan daya ikat) adalah ....",
+        options: [
+          "mewajibkan antre dan buang sampah pada tempatnya, melarang menyerobot, serta memberi sanksi piket kebersihan bagi pelanggar",
+          "memasang poster ajakan hidup bersih tanpa menetapkan batas larangan maupun konsekuensi bagi siswa yang melanggar",
+          "melarang siswa kelas VII membeli makanan di kantin pada jam istirahat pertama agar antrean berkurang drastis",
+          "menyerahkan sepenuhnya urusan kebersihan meja makan kepada petugas penjaga kantin karena siswa sudah membayar"
+        ],
+        answer: [0],
+        explanation: "Opsi pertama memuat keempat syarat norma secara utuh: perintah (antre & buang sampah), larangan (dilarang menyerobot), sanksi edukatif (piket kebersihan), dan mengikat seluruh pengunjung kantin."
+      },
+
+      // ==================== SUBBAB C: MACAM-MACAM NORMA & HUBUNGAN ANTANORMA (7 SOAL: 5 PG + 2 PGK) ====================
+
+      // SOAL 12 (C4 - Sedang - PG)
+      {
+        id: 12,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-emerald-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan tabel perbandingan empat macam norma dalam kehidupan masyarakat berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-emerald-100 text-emerald-950">
+                  <th class="p-2 border border-emerald-200">Macam Norma</th>
+                  <th class="p-2 border border-emerald-200">Sumber Aturan</th>
+                  <th class="p-2 border border-emerald-200">Sanksi bagi Pelanggar</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-emerald-200 font-semibold">Norma Agama</td>
+                  <td class="p-2 border border-emerald-200">Wahyu Tuhan YME dalam kitab suci</td>
+                  <td class="p-2 border border-emerald-200">Dosa dan balasan di akhirat kelak</td>
+                </tr>
+                <tr class="bg-emerald-50/40">
+                  <td class="p-2 border border-emerald-200 font-semibold">Norma Kesusilaan</td>
+                  <td class="p-2 border border-emerald-200">Suara hati nurani manusia</td>
+                  <td class="p-2 border border-emerald-200">Rasa bersalah, malu, takut, dan menyesal</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-emerald-200 font-semibold">Norma Kesopanan</td>
+                  <td class="p-2 border border-emerald-200">Kebiasaan pergaulan masyarakat</td>
+                  <td class="p-2 border border-emerald-200">Cemoohan, teguran, atau dikucilkan warga</td>
+                </tr>
+                <tr class="bg-emerald-50/40">
+                  <td class="p-2 border border-emerald-200 font-semibold">Norma Hukum</td>
+                  <td class="p-2 border border-emerald-200">Lembaga negara/pejabat berwenang</td>
+                  <td class="p-2 border border-emerald-200">Tegas &amp; memaksa (denda, kurungan, penjara)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan tabel di atas, alasan utama mengapa norma hukum tetap sangat diperlukan meskipun dalam masyarakat sudah berlaku norma agama, kesusilaan, dan kesopanan adalah ....",
+        options: [
+          "sanksi norma hukum bersifat tegas, nyata, dan memaksa secara langsung sehingga menimbulkan efek jera",
+          "norma agama dan kesopanan hanya berlaku bagi kelompok masyarakat yang tinggal di wilayah pedesaan",
+          "norma kesusilaan tidak memiliki pengaruh terhadap pembentukan akhlak dan kejujuran pribadi seseorang",
+          "aturan dalam norma hukum dapat diubah secara bebas oleh setiap warga negara sesuai kepentingannya"
+        ],
+        answer: [0],
+        explanation: "Sanksi norma agama tidak langsung dirasakan di dunia, sedangkan sanksi kesusilaan dan kesopanan bersifat batiniah/sosial yang terkadang belum cukup membuat jera, sehingga diperlukan norma hukum yang sanksinya tegas dan memaksa."
+      },
+
+      // SOAL 13 (C3 - Sedang - PG)
+      {
+        id: 13,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan ilustrasi poster imbauan kejujuran dan kutipan mengenai lembaga antirasuah berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-emerald-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#ecfdf5"/>
+                  <rect x="24" y="16" width="132" height="92" rx="8" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+                  <circle cx="90" cy="48" r="16" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+                  <path d="M82 48 L88 54 L99 42" stroke="#047857" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <text x="90" y="78" font-size="8" font-weight="bold" fill="#064e3b" text-anchor="middle">BERANI JUJUR HEBAT</text>
+                  <text x="90" y="90" font-size="6.8" fill="#047857" text-anchor="middle">SUARA HATI NURANI</text>
+                  <text x="90" y="126" font-size="7" font-weight="bold" fill="#065f46" text-anchor="middle">NORMA KESUSILAAN</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Gerakan Kejujuran (Adaptasi KPK.go.id, 2023)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Ketika menemukan dompet berisi uang di halaman sekolah tanpa ada satu pun orang yang melihat, Bagas segera menyerahkannya kepada guru piket karena suara hatinya mengatakan bahwa mengambil hak orang lain adalah perbuatan tercela yang akan membuatnya merasa bersalah.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Keputusan jujur yang diambil oleh Bagas pada cerita tersebut bersumber dari penghayatan terhadap ....",
+        options: [
+          "norma kesusilaan yang berasal dari suara hati nurani untuk membedakan perbuatan baik dan buruk",
+          "norma kesopanan yang hanya berlaku apabila ada pengawasan langsung dari warga di sekitar tempat kejadian",
+          "norma hukum internasional yang mengatur pengembalian barang hilang di lingkungan lembaga pendidikan",
+          "norma adat daerah yang menetapkan denda berupa barang apabila seseorang menemukan benda berharga"
+        ],
+        answer: [0],
+        explanation: "Norma kesusilaan bersumber dari suara hati nurani setiap individu yang menuntun untuk selalu berkata dan berbuat jujur meski tidak diawasi orang lain."
+      },
+
+      // SOAL 14 (C4 - Sulit - PGK)
+      {
+        id: 14,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-teal-50/70 border border-teal-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-teal-950 mb-2">Cermati informasi mengenai kedudukan norma adat dan jaminan konstitusinya di Indonesia berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Dalam masyarakat Indonesia yang majemuk, norma kesopanan berdampingan dengan norma adat setempat, seperti tradisi <em>selametan</em> di Jawa, pelaksanaan <em>Catur Brata Penyepian</em> saat Nyepi di Bali, serta kearifan berjalan kaki tanpa alas kaki bagi masyarakat adat Baduy di Banten. Keberadaan masyarakat hukum adat beserta hak-hak tradisionalnya diakui dan dihormati negara dalam Pasal 18B ayat (2) UUD NRI Tahun 1945.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, pilihlah dua pernyataan yang tepat mengenai norma adat di Indonesia!",
+        options: [
+          "Norma adat diakui secara konstitusional sepanjang masih hidup dan sesuai dengan prinsip NKRI",
+          "Pelanggar norma adat akan menerima sanksi sosial yang disepakati ketua adat dan masyarakat setempat",
+          "Norma adat di seluruh provinsi Indonesia memiliki aturan dan tata cara pelaksanaan yang sama persis",
+          "Keberadaan norma adat menggantikan berlakunya undang-undang pidana nasional di wilayah pedesaan"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 benar sesuai Pasal 18B ayat (2) UUD NRI Tahun 1945, dan pernyataan 2 benar bahwa pelanggaran norma adat dikenai sanksi sosial sesuai ketentuan adat setempat."
+      },
+
+      // SOAL 15 (C4 - Sulit - PG)
+      {
+        id: 15,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan ilustrasi larangan berkendara bagi anak di bawah umur berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-emerald-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#ecfdf5"/>
+                  <!-- Rambu Larangan -->
+                  <circle cx="90" cy="54" r="30" fill="#ffffff" stroke="#dc2626" stroke-width="6"/>
+                  <line x1="69" y1="33" x2="111" y2="75" stroke="#dc2626" stroke-width="5"/>
+                  <text x="90" y="52" font-size="8" font-weight="bold" fill="#1e293b" text-anchor="middle">USIA &lt; 17</text>
+                  <text x="90" y="63" font-size="7" font-weight="bold" fill="#dc2626" text-anchor="middle">TANPA SIM</text>
+                  <rect x="22" y="98" width="136" height="24" rx="6" fill="#047857"/>
+                  <text x="90" y="113" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle">DILARANG BERKENDARA</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Tertib Lalu Lintas (Kemendikbudristek, 2023)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Seorang pelajar SMP berusia 13 tahun mengendarai sepeda motor di jalan raya menuju sekolah tanpa memiliki Surat Izin Mengemudi (SIM) hingga akhirnya diberhentikan dan ditilang oleh petugas kepolisian saat operasi tertib lalu lintas.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Alasan mendasar aturan hukum lalu lintas melarang pelajar usia SMP mengendarai sepeda motor di jalan raya adalah ....",
+        options: [
+          "melindungi keselamatan diri pelajar dan pengguna jalan lain karena belum memenuhi syarat usia serta kecakapan",
+          "menambah pemasukan kas daerah dari denda tilang yang dikenakan kepada pelajar yang berangkat ke sekolah",
+          "mengurangi jumlah kendaraan bermotor di jalan raya agar jalan protokol hanya dilalui angkutan barang",
+          "membatasi kebebasan pelajar untuk datang tepat waktu ke sekolah tanpa diantar oleh orang tua mereka"
+        ],
+        answer: [0],
+        explanation: "Anak di bawah umur belum memiliki SIM, pengetahuan aturan lalu lintas masih terbatas, dan emosi berkendara belum stabil sehingga norma hukum melarangnya demi keselamatan diri sendiri maupun orang lain."
+      },
+
+      // SOAL 16 (C5 - Sangat Sulit - PG)
+      {
+        id: 16,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-lime-50/70 border border-lime-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-lime-950 mb-2">Cermati analisis kasus pencurian telepon genggam ditinjau dari keempat macam norma berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Perbuatan mengambil telepon genggam milik teman secara diam-diam melanggar keempat norma sekaligus: mendapat dosa menurut norma agama, menimbulkan rasa bersalah menurut norma kesusilaan, dicemooh warga menurut norma kesopanan, serta diancam pidana penjara atau denda berdasarkan Pasal 362 KUHP menurut norma hukum.
+            </p>
+          </div>
+        `,
+        question: "Kesimpulan paling tepat mengenai hubungan keempat macam norma dalam kasus tersebut adalah ....",
+        options: [
+          "keempat norma saling melengkapi dan menguatkan untuk melindungi hak serta ketenteraman masyarakat",
+          "sanksi norma hukum otomatis menghapus dosa dan rasa bersalah pelaku di hadapan Tuhan serta hati nurani",
+          "apabila pelaku sudah menerima cemoohan masyarakat maka aparat penegak hukum tidak perlu memprosesnya",
+          "norma agama dan kesusilaan hanya berfungsi sebagai pelengkap apabila norma hukum belum mengatur suatu tindak pidana"
+        ],
+        answer: [0],
+        explanation: "Keempat norma memiliki sumber dan sanksi berbeda namun tujuan akhirnya sama, yaitu mewujudkan kehidupan yang aman, tertib, dan tenteram sehingga saling melengkapi satu sama lain."
+      },
+
+      // SOAL 17 (C3 - Sedang - PG)
+      {
+        id: 17,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-white border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan ilustrasi perilaku terpuji pemain muda sepak bola Indonesia berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-emerald-200 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#ecfdf5"/>
+                  <rect x="0" y="96" width="180" height="44" fill="#16a34a" opacity="0.35"/>
+                  <!-- Wasit -->
+                  <circle cx="66" cy="54" r="10" fill="#1e293b"/>
+                  <path d="M52 96 C52 72 80 72 80 96 Z" fill="#334155"/>
+                  <!-- Pemain Muda Membungkuk Santun -->
+                  <circle cx="114" cy="64" r="9" fill="#047857"/>
+                  <path d="M98 96 C100 76 126 76 128 96 Z" fill="#dc2626"/>
+                  <line x1="78" y1="80" x2="102" y2="80" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                  <text x="90" y="126" font-size="7" font-weight="bold" fill="#064e3b" text-anchor="middle">SANTUN KEPADA YANG TUA</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Pemain Timnas U-12 (Adaptasi Brilio.net, 2017)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Sebelum pertandingan internasional dimulai, para pemain muda Timnas Indonesia U-12 menyalami dan mencium tangan wasit yang memimpin laga. Tindakan sederhana ini menuai pujian luas karena mencerminkan budaya hormat kepada orang yang lebih tua.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Tindakan menyalami dengan santun serta mengucapkan 'permisi' sambil membungkukkan badan saat melewati orang tua yang sedang berbincang termasuk penerapan ....",
+        options: [
+          "norma kesopanan yang lahir dari tata krama pergaulan masyarakat untuk menghormati sesama",
+          "norma hukum tertulis yang diatur dalam peraturan pertandingan olahraga tingkat internasional",
+          "norma kesusilaan yang sanksinya berupa hukuman denda administratif dari panitia penyelenggara",
+          "norma agama yang tata cara pelaksanaannya wajib dicantumkan dalam aturan resmi sekolah"
+        ],
+        answer: [0],
+        explanation: "Menyalami orang yang lebih tua dengan santun dan mengucapkan permisi saat lewat di depan orang lain merupakan wujud nyata norma kesopanan (tata krama) dalam kehidupan bermasyarakat."
+      },
+
+      // SOAL 18 (C4 - Sulit - PGK)
+      {
+        id: 18,
+        subbab: "C. Macam-Macam Norma dan Hubungan Antarnorma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling sesuai!",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati informasi mengenai jaminan kebebasan beragama bagi umat Khonghucu di Indonesia berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Agama Khonghucu merupakan salah satu dari enam agama resmi yang diakui di Indonesia. Melalui Keputusan Presiden Nomor 6 Tahun 2000 yang mencabut Inpres No. 14 Tahun 1967, pemerintah menjamin pemeluk agama Khonghucu untuk menjalankan ibadah, merayakan hari besar keagamaan (Imlek sebagai hari libur nasional), dan melestarikan tradisinya tanpa memerlukan izin khusus.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, pilihlah tiga kesimpulan yang tepat mengenai keterkaitan norma agama dan norma hukum di Indonesia!",
+        options: [
+          "Norma hukum negara memberikan perlindungan dan jaminan kebebasan bagi setiap pemeluk agama resmi untuk beribadah",
+          "Norma agama mengatur hubungan vertikal manusia dengan Tuhan YME sekaligus hubungan harmonis antarsesama",
+          "Setiap umat beragama dijamin haknya merayakan hari besar keagamaan dengan tenang tanpa diskriminasi",
+          "Pelaksanaan ibadah setiap agama di Indonesia harus memperoleh izin tertulis terlebih dahulu dari pemerintah daerah"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 benar: negara menjamin kebebasan beragama melalui peraturan hukum tanpa memerlukan izin khusus, sedangkan norma agama mengatur hubungan vertikal dan horizontal."
+      },
+
+      // ==================== SUBBAB D: SEBAB PELANGGARAN & BERTINDAK SESUAI NORMA (7 SOAL: 5 PG + 2 PGK) ====================
+
+      // SOAL 19 (C4 - Sulit - PG - Wacana Lengah di Dunia Maya)
+      {
+        id: 19,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-rose-50/70 border border-rose-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-rose-950 mb-2">Cermati cuplikan kisah kasus penyalahgunaan media sosial oleh pelajar berikut ini!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              R (nama samaran), seorang siswa kelas VII, menyebarkan berita bohong (hoaks) melalui akun media sosialnya bahwa sekolah akan diliburkan selama dua minggu sehingga membuat teman-temannya percaya dan tidak mempersiapkan tugas pelajaran. Setelah ditelusuri pihak sekolah, terungkap bahwa R melakukan hal tersebut demi mencari perhatian agar cepat terkenal. Akibatnya, R dikenai sanksi pembinaan oleh tim kesiswaan.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan analisis penyebab terjadinya pelanggaran norma, faktor utama yang mendorong R menyebarkan berita bohong tersebut adalah ....",
+        options: [
+          "kurangnya kemampuan mengendalikan diri serta rendahnya kesadaran terhadap dampak merugikan bagi orang lain",
+          "adanya paksaan fisik dari pihak luar sekolah yang mengancam keselamatan pribadi siswa tersebut",
+          "tidak tersedianya fasilitas jaringan internet yang memadai di lingkungan tempat tinggal siswa",
+          "belum adanya aturan tertulis di sekolah yang melarang siswa memiliki akun komunikasi daring"
+        ],
+        answer: [0],
+        explanation: "Tindakan R yang terburu-buru demi mencari popularitas tanpa memikirkan akibatnya mencerminkan ketidakmampuan mengendalikan diri dan rendahnya kesadaran terhadap norma kesusilaan, kesopanan, maupun hukum."
+      },
+
+      // SOAL 20 (C4 - Sulit - PGK)
+      {
+        id: 20,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-white border border-emerald-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan tabel pemetaan enam faktor penyebab terjadinya pelanggaran norma berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-emerald-100 text-emerald-950">
+                  <th class="p-2 border border-emerald-200">Faktor Penyebab</th>
+                  <th class="p-2 border border-emerald-200">Contoh Peristiwa di Lingkungan Pelajar</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-emerald-200 font-semibold">Sudah terbiasa melanggar</td>
+                  <td class="p-2 border border-emerald-200">Siswa berulang kali datang terlambat karena merasa sanksinya ringan</td>
+                </tr>
+                <tr class="bg-emerald-50/40">
+                  <td class="p-2 border border-emerald-200 font-semibold">Kurang sosialisasi aturan</td>
+                  <td class="p-2 border border-emerald-200">Siswa salah memahami aturan ukuran seragam karena belum dijelaskan rinci</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-emerald-200 font-semibold">Tekanan lingkungan sekitar</td>
+                  <td class="p-2 border border-emerald-200">Siswa dipaksa temannya berbohong saat melihat aksi menyontek ulangan</td>
+                </tr>
+                <tr class="bg-emerald-50/40">
+                  <td class="p-2 border border-emerald-200 font-semibold">Menurunnya rasa persatuan</td>
+                  <td class="p-2 border border-emerald-200">Siswa menolak satu tim olahraga karena berbeda suku dengan rekan setim</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan tabel pemetaan di atas, pilihlah dua solusi pencegahan yang paling tepat sasaran!",
+        options: [
+          "Sekolah memberikan penjelasan tata tertib secara rinci saat masa pengenalan lingkungan sekolah agar tidak multitafsir",
+          "Pelajar melatih keberanian berkata jujur dan menolak ajakan teman yang memaksa melanggar aturan kejujuran",
+          "Menghapus seluruh sanksi keterlambatan di sekolah supaya siswa tidak merasa tertekan saat berangkat pagi",
+          "Mengelompokkan anggota tim olahraga berdasarkan kesamaan suku agar tidak muncul penolakan antarsiswa"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 mengatasi faktor kurangnya sosialisasi aturan, dan pernyataan 2 mengatasi faktor tekanan lingkungan sekitar agar siswa berani mempertahankan integritas dan kejujuran."
+      },
+
+      // SOAL 21 (C3 - Sedang - PG)
+      {
+        id: 21,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati contoh perilaku patuh terhadap norma di empat lingkungan kehidupan berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Kepatuhan terhadap norma perlu dibiasakan secara menyeluruh mulai dari lingkungan keluarga (menghormati orang tua dan menjaga nama baik keluarga), sekolah (mematuhi tata tertib dan bekerja sama dalam kelompok), masyarakat (meminta izin saat bertamu dan ikut kerja bakti), hingga bangsa dan negara (taat lalu lintas, menjaga fasilitas umum, dan membayar pajak).
+            </p>
+          </div>
+        `,
+        question: "Manakah perilaku pelajar berikut yang mencerminkan kepatuhan terhadap norma di lingkungan bangsa dan negara?",
+        options: [
+          "tidak mencoret-coret halte bus serta berhenti di belakang garis marka saat lampu lalu lintas merah",
+          "merapikan tempat tidur setiap pagi dan membantu orang tua mencuci piring setelah makan malam",
+          "memakai seragam pramuka sesuai jadwal hari Jumat dan memotong rambut rapi sesuai aturan sekolah",
+          "mengucapkan salam dengan sopan ketika berkunjung ke rumah tetangga pada waktu sore hari"
+        ],
+        answer: [0],
+        explanation: "Menjaga fasilitas umum (halte bus) dan mematuhi peraturan lalu lintas adalah wujud kepatuhan terhadap norma hukum di lingkungan bangsa dan negara."
+      },
+
+      // SOAL 22 (C5 - Sangat Sulit - PG)
+      {
+        id: 22,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-teal-50/70 border border-teal-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-teal-950 mb-2">Cermati dilema pengambilan keputusan yang dialami seorang pelajar berikut ini!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Saat ujian akhir semester mata pelajaran Pendidikan Pancasila berlangsung, kamu duduk di bangku belakang dan melihat sahabat dekatmu—yang selama ini dikenal pandai dan selalu meraih peringkat atas—diam-diam membuka catatan kecil di bawah meja karena takut nilainya turun.
+            </p>
+          </div>
+        `,
+        question: "Sikap terbaik dan paling berintegritas yang harus kamu ambil dalam situasi dilematis tersebut adalah ....",
+        options: [
+          "tetap mengerjakan ujian secara jujur lalu menasihati sahabatmu secara pribadi usai ujian agar tidak mengulanginya",
+          "ikut membuka catatan kecil supaya nilai ujianmu tidak kalah tinggi dibandingkan sahabatmu tersebut",
+          "berteriak keras di tengah ruang ujian agar seluruh peserta mengetahui kecurangan yang dilakukan temanmu",
+          "membiarkan kecurangan tersebut terus berlangsung di setiap ujian sebagai bentuk solidaritas pertemanan"
+        ],
+        answer: [0],
+        explanation: "Tetap menjaga kejujuran diri selama ujian berlangsung dan mengingatkan sahabat secara empat mata dengan santun setelah ujian selesai menjaga ketertiban kelas sekaligus menegakkan norma kesusilaan dan hukum."
+      },
+
+      // SOAL 23 (C4 - Sedang - PG)
+      {
+        id: 23,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Perhatikan situasi di perpustakaan sekolah saat jam istirahat berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Pada jam istirahat, kamu menemukan buku referensi penting di perpustakaan untuk tugas kelompok, namun petugas perpustakaan sedang keluar ruangan sementara bel masuk kelas sudah berbunyi. Jika membawa buku keluar tanpa pencatatan peminjaman, hal itu melanggar aturan perpustakaan.
+            </p>
+          </div>
+        `,
+        question: "Tindakan paling tepat yang mencerminkan kepatuhan terhadap norma kejujuran dan tata tertib sekolah adalah ....",
+        options: [
+          "menitipkan pesan tertulis kepada guru piket atau kembali meminjam secara resmi saat jam pulang sekolah",
+          "langsung membawa pulang buku tersebut ke dalam tas dengan niat mengembalikannya keesokan pagi",
+          "menyembunyikan buku tersebut di balik rak paling bawah agar tidak ditemukan oleh siswa kelas lain",
+          "merobek halaman materi yang dibutuhkan saja supaya tetap bisa mengerjakan tugas di dalam kelas"
+        ],
+        answer: [0],
+        explanation: "Tidak membawa barang/buku tanpa izin resmi (menitipkan pesan ke guru piket atau meminjam sesuai prosedur setelah jam pelajaran) menunjukkan kepatuhan terhadap norma hukum sekolah dan norma kesusilaan."
+      },
+
+      // SOAL 24 (C4 - Sulit - PGK)
+      {
+        id: 24,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-lime-50/70 border border-lime-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-lime-950 mb-2">Cermati paparan mengenai manfaat kesadaran membayar pajak dan menjaga fasilitas umum bagi pembangunan negara berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Pajak yang dibayarkan warga negara secara taat dikembalikan oleh negara kepada masyarakat dalam bentuk pembangunan jalan raya, jembatan, gedung sekolah, rumah sakit, dan program beasiswa pendidikan. Di sisi lain, seluruh warga berkewajiban merawat fasilitas umum tersebut agar dapat dimanfaatkan dalam jangka panjang.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, pilihlah tiga analisis yang paling tepat mengenai kepatuhan terhadap norma hukum!",
+        options: [
+          "Kepatuhan membayar pajak menopang pembiayaan fasilitas publik yang bermanfaat bagi kesejahteraan bersama",
+          "Pelajar berkontribusi menegakkan norma hukum negara dengan cara merawat fasilitas sekolah dan fasilitas umum",
+          "Tindakan mencoret-coret tembok fasilitas publik merupakan pelanggaran norma yang merugikan kepentingan umum",
+          "Warga negara yang tidak memiliki kendaraan pribadi dibebaskan dari kewajiban menjaga kebersihan jalan raya"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 tepat sesuai peran pajak dan kewajiban menjaga fasilitas umum dalam kehidupan berbangsa dan bernegara."
+      },
+
+      // SOAL 25 (C6 - Sangat Sulit - PG)
+      {
+        id: 25,
+        subbab: "D. Sebab Terjadinya Pelanggaran Norma dan Bertindak Sesuai Norma",
+        type: "pg",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-emerald-50/80 border border-emerald-300 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-emerald-950 mb-2">Cermati studi kasus pelanggaran etika berkomunikasi di grup percakapan kelas berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Di grup percakapan daring kelas VII-D, beberapa siswa sering mengirimkan stiker mengejek teman, menyebarkan tangkapan layar percakapan pribadi tanpa izin, serta mengirim pesan tugas hingga larut malam. Akibatnya, suasana belajar menjadi tidak nyaman dan muncul perselisihan antaranggota kelas.
+            </p>
+          </div>
+        `,
+        question: "Jika kamu diminta merancang kesepakatan etika digital kelas untuk mengatasi masalah tersebut, rancangan aturan yang paling efektif adalah ....",
+        options: [
+          "menyusun piagam etika grup kelas yang mengatur jam kirim pesan, larangan mengejek, serta sanksi permohonan maaf terbuka",
+          "membubarkan seluruh grup komunikasi kelas sehingga informasi tugas hanya disampaikan secara lisan di kelas",
+          "mengeluarkan langsung setiap siswa yang mengirim stiker dari grup kelas tanpa memberikan peringatan atau penjelasan",
+          "membiarkan kebiasaan tersebut berlangsung karena percakapan di dunia maya tidak terikat oleh norma kesopanan"
+        ],
+        answer: [0],
+        explanation: "Menyusun piagam etika digital secara partisipatif yang memuat perintah (sopan & tepat waktu), larangan (mengejek/sebar privasi), dan sanksi mendidik adalah kreasi penerapan norma yang efektif di era digital (C6)."
+      }
+    ];
+
+    // ==================== STATE & PENGACAKAN (FISHER-YATES) ====================
+    let questionsData = [];
+    let currentMode = 'belajar'; // 'belajar' | 'latihan'
+    let currentIndex = 0;
+    let userAnswers = [];
+    let checkedStatus = [];
+    let doubtStatus = [];
+    let isReviewMode = false;
+    let timerSeconds = 60 * 60;
+    let timerInterval = null;
+    let pendingModalAction = null;
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function prepareRandomizedQuestions() {
+      // Acak urutan soal dan posisi opsi jawaban A, B, C, D per soal sambil melacak kunci jawaban baru
+      const shuffledQs = shuffleArray(baseQuestionsData);
+      questionsData = shuffledQs.map((q) => {
+        const indexedOptions = q.options.map((text, originalIdx) => ({
+          text,
+          isCorrect: q.answer.includes(originalIdx)
+        }));
+        const shuffledOptions = shuffleArray(indexedOptions);
+        const newOptions = shuffledOptions.map(item => item.text);
+        const newAnswer = shuffledOptions
+          .map((item, newIdx) => (item.isCorrect ? newIdx : -1))
+          .filter(idx => idx !== -1);
+
+        return {
+          ...q,
+          options: newOptions,
+          answer: newAnswer
+        };
+      });
+    }
+
+    // ==================== FUNGSI NAVIGASI LAYAR ====================
+    function startQuiz(mode) {
+      prepareRandomizedQuestions();
+      currentMode = mode;
+      currentIndex = 0;
+      userAnswers = Array.from({ length: questionsData.length }, () => []);
+      checkedStatus = Array(questionsData.length).fill(false);
+      doubtStatus = Array(questionsData.length).fill(false);
+      isReviewMode = false;
+
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      const timerBox = document.getElementById('timer-box');
+      const finishBtn = document.getElementById('finish-btn');
+      const legendDoubt = document.getElementById('legend-doubt');
+      const legendEval = document.getElementById('legend-eval');
+
+      clearInterval(timerInterval);
+
+      if (mode === 'belajar') {
+        modeBadge.textContent = 'MODE BELAJAR (LANGSUNG PEMBAHASAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-teal-100 text-teal-900 border border-teal-300';
+        timerBox.classList.add('hidden');
+        timerBox.classList.remove('flex');
+        finishBtn.textContent = 'Lihat Rekap Skor';
+        legendDoubt.classList.add('hidden');
+        legendEval.classList.remove('hidden');
+      } else {
+        modeBadge.textContent = 'MODE LATIHAN (SIMULASI UJIAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-emerald-800 text-emerald-50 border border-emerald-950';
+        timerSeconds = 60 * 60;
+        updateTimerDisplay();
+        timerBox.classList.remove('hidden');
+        timerBox.classList.add('flex');
+        finishBtn.textContent = 'Selesai & Kumpulkan';
+        legendDoubt.classList.remove('hidden');
+        legendEval.classList.add('hidden');
+        startTimer();
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        timerSeconds--;
+        updateTimerDisplay();
+        if (timerSeconds <= 0) {
+          clearInterval(timerInterval);
+          submitQuiz();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSeconds / 60);
+      const s = timerSeconds % 60;
+      const display = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      const el = document.getElementById('timer-display');
+      el.textContent = display;
+      if (timerSeconds <= 300) {
+        el.parentElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      } else {
+        el.parentElement.classList.remove('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      }
+    }
+
+    // ==================== RENDER SOAL ====================
+    function renderQuestion() {
+      const q = questionsData[currentIndex];
+      const letters = ['A', 'B', 'C', 'D'];
+
+      // Header badges
+      document.getElementById('q-number-badge').textContent = `Soal ${currentIndex + 1} dari ${questionsData.length}`;
+      document.getElementById('q-type-badge').textContent = q.type === 'pg' ? 'Pilihan Ganda' : 'Pilihan Ganda Kompleks';
+      document.getElementById('q-cog-badge').textContent = q.cognitive;
+      document.getElementById('q-diff-badge').textContent = q.difficulty;
+
+      // Instruksi PG Kompleks
+      const pgkInst = document.getElementById('pgk-instruction');
+      const pgkInstText = document.getElementById('pgk-instruction-text');
+      if (q.type === 'pgk') {
+        pgkInst.classList.remove('hidden');
+        pgkInstText.textContent = q.instructionText || 'PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!';
+      } else {
+        pgkInst.classList.add('hidden');
+      }
+
+      // Stimulus & Pertanyaan
+      document.getElementById('stimulus-container').innerHTML = q.stimulus;
+      document.getElementById('question-text').innerHTML = q.question;
+
+      // Status lock
+      const isLocked = (currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode;
+      const selected = userAnswers[currentIndex];
+
+      // Render Opsi
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      q.options.forEach((optText, idx) => {
+        const isSelected = selected.includes(idx);
+        const isCorrectOpt = q.answer.includes(idx);
+
+        let cardClass = 'option-card w-full text-left p-3.5 sm:p-4 rounded-xl border-2 flex items-start gap-3 cursor-pointer ';
+        let badgeClass = 'w-7 h-7 rounded-lg flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5 ';
+        let statusTag = '';
+
+        if (isLocked) {
+          cardClass += 'disabled-opt cursor-default ';
+          if (isCorrectOpt && isSelected) {
+            cardClass += 'bg-emerald-50 border-emerald-500 text-emerald-950';
+            badgeClass += 'bg-emerald-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">✓ Benar</span>';
+          } else if (isCorrectOpt && !isSelected) {
+            cardClass += 'bg-emerald-50/60 border-emerald-400 border-dashed text-emerald-900';
+            badgeClass += 'bg-emerald-500 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">Kunci Jawaban</span>';
+          } else if (!isCorrectOpt && isSelected) {
+            cardClass += 'bg-rose-50 border-rose-500 text-rose-950';
+            badgeClass += 'bg-rose-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-rose-700 shrink-0">✕ Pilihanmu</span>';
+          } else {
+            cardClass += 'bg-slate-50/70 border-slate-200 text-slate-500';
+            badgeClass += 'bg-slate-200 text-slate-600';
+          }
+        } else {
+          if (isSelected) {
+            cardClass += 'bg-emerald-50 border-emerald-600 text-emerald-950 shadow-xs';
+            badgeClass += 'bg-emerald-700 text-white';
+          } else {
+            cardClass += 'bg-white border-slate-200 hover:border-emerald-400 hover:bg-emerald-50/30 text-slate-800';
+            badgeClass += 'bg-emerald-100 text-emerald-900';
+          }
+        }
+
+        const inputIndicator = q.type === 'pg'
+          ? `<span class="${badgeClass}">${letters[idx]}</span>`
+          : `<span class="${badgeClass}">${isSelected ? '✓' : letters[idx]}</span>`;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = cardClass;
+        btn.disabled = isLocked;
+        btn.onclick = () => selectOption(idx);
+        btn.innerHTML = `
+          ${inputIndicator}
+          <span class="text-xs sm:text-sm leading-relaxed font-medium">${optText}</span>
+          ${statusTag}
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      // Tombol kontrol bawah
+      const checkBtn = document.getElementById('check-answer-btn');
+      const doubtWrap = document.getElementById('doubt-checkbox-wrap');
+      const doubtCb = document.getElementById('doubt-checkbox');
+
+      if (currentMode === 'belajar' && !isReviewMode) {
+        doubtWrap.classList.add('hidden');
+        if (!checkedStatus[currentIndex]) {
+          checkBtn.classList.remove('hidden');
+          checkBtn.disabled = selected.length === 0;
+          checkBtn.className = selected.length === 0
+            ? 'px-4 py-2.5 rounded-xl bg-slate-300 text-slate-500 font-bold text-xs sm:text-sm cursor-not-allowed'
+            : 'px-4 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer';
+        } else {
+          checkBtn.classList.add('hidden');
+        }
+      } else if (currentMode === 'latihan' && !isReviewMode) {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.remove('hidden');
+        doubtCb.checked = doubtStatus[currentIndex];
+      } else {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.add('hidden');
+      }
+
+      // Tombol Prev / Next
+      document.getElementById('prev-btn').disabled = currentIndex === 0;
+      document.getElementById('next-btn').disabled = currentIndex === questionsData.length - 1;
+
+      // Render Kotak Pembahasan
+      renderExplanationBox(isLocked);
+    }
+
+    function selectOption(optIdx) {
+      const q = questionsData[currentIndex];
+      if ((currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode) return;
+
+      if (q.type === 'pg') {
+        userAnswers[currentIndex] = [optIdx];
+      } else {
+        const current = [...userAnswers[currentIndex]];
+        const pos = current.indexOf(optIdx);
+        if (pos > -1) {
+          current.splice(pos, 1);
+        } else {
+          current.push(optIdx);
+        }
+        current.sort((a, b) => a - b);
+        userAnswers[currentIndex] = current;
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function checkCurrentAnswer() {
+      if (userAnswers[currentIndex].length === 0) return;
+      checkedStatus[currentIndex] = true;
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function toggleDoubt() {
+      doubtStatus[currentIndex] = document.getElementById('doubt-checkbox').checked;
+      renderNavGrid();
+    }
+
+    function isAnswerCorrect(index) {
+      const q = questionsData[index];
+      const u = userAnswers[index];
+      if (u.length !== q.answer.length) return false;
+      const sortedU = [...u].sort((a, b) => a - b);
+      const sortedA = [...q.answer].sort((a, b) => a - b);
+      return sortedU.every((val, i) => val === sortedA[i]);
+    }
+
+    function renderExplanationBox(show) {
+      const box = document.getElementById('explanation-box');
+      if (!show) {
+        box.classList.add('hidden');
+        return;
+      }
+
+      const q = questionsData[currentIndex];
+      const correct = isAnswerCorrect(currentIndex);
+      const letters = ['A', 'B', 'C', 'D'];
+      const keyLabels = q.answer.map(i => letters[i]).join(', ');
+      const userLabels = userAnswers[currentIndex].length > 0
+        ? userAnswers[currentIndex].map(i => letters[i]).join(', ')
+        : 'Tidak dijawab';
+
+      box.classList.remove('hidden');
+      if (correct) {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-emerald-50/80 border-emerald-400 text-emerald-950';
+        document.getElementById('exp-status-icon').textContent = '🎉';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu BENAR!';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-emerald-800 mb-2';
+      } else {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-rose-50/80 border-rose-400 text-rose-950';
+        document.getElementById('exp-status-icon').textContent = '💡';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu KURANG TEPAT';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-rose-800 mb-2';
+      }
+
+      document.getElementById('exp-key-text').textContent = `Kunci Jawaban: ${keyLabels} | Jawabanmu: ${userLabels}`;
+      document.getElementById('exp-detail-text').innerHTML = `<strong>Pembahasan:</strong> ${q.explanation}`;
+    }
+
+    // ==================== NAVIGASI NOMOR ====================
+    function renderNavGrid() {
+      const grid = document.getElementById('nav-grid');
+      grid.innerHTML = '';
+
+      questionsData.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = idx + 1;
+        btn.onclick = () => {
+          currentIndex = idx;
+          renderQuestion();
+          renderNavGrid();
+        };
+
+        const isCurrent = idx === currentIndex;
+        const isAnswered = userAnswers[idx].length > 0;
+        const isEvaluated = (currentMode === 'belajar' && checkedStatus[idx]) || isReviewMode;
+
+        let cls = 'h-9 rounded-xl font-bold text-xs transition flex items-center justify-center cursor-pointer ';
+
+        if (isCurrent) {
+          cls += 'ring-2 ring-offset-1 ring-emerald-700 ';
+        }
+
+        if (isEvaluated) {
+          if (isAnswerCorrect(idx)) {
+            cls += 'bg-emerald-500 text-white';
+          } else {
+            cls += 'bg-rose-500 text-white';
+          }
+        } else if (currentMode === 'latihan' && doubtStatus[idx]) {
+          cls += 'bg-amber-300 border border-amber-600 text-amber-950';
+        } else if (isAnswered) {
+          cls += 'bg-emerald-100 border border-emerald-400 text-emerald-950';
+        } else if (isCurrent) {
+          cls += 'bg-emerald-700 text-white';
+        } else {
+          cls += 'bg-slate-100 border border-slate-300 text-slate-700 hover:bg-emerald-50';
+        }
+
+        btn.className = cls;
+        grid.appendChild(btn);
+      });
+    }
+
+    function updateProgressText() {
+      const answeredCount = userAnswers.filter(a => a.length > 0).length;
+      document.getElementById('progress-text').textContent = `Terjawab: ${answeredCount} / ${questionsData.length}`;
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questionsData.length - 1) {
+        currentIndex++;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    // ==================== MODAL & PENYELESAIAN ====================
+    function openSwitchModal() {
+      document.getElementById('modal-title').textContent = 'Ganti Mode atau Reset Kuis?';
+      document.getElementById('modal-message').textContent = 'Progres jawaban saat ini akan diatur ulang dan urutan soal serta opsi jawaban akan diacak kembali saat sesi dimulai. Lanjutkan?';
+      pendingModalAction = () => {
+        clearInterval(timerInterval);
+        resetToHome();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function openFinishModal() {
+      const unanswered = userAnswers.filter(a => a.length === 0).length;
+      document.getElementById('modal-title').textContent = 'Selesaikan & Lihat Hasil?';
+      document.getElementById('modal-message').textContent = unanswered > 0
+        ? `Masih terdapat ${unanswered} soal yang belum kamu jawab. Apakah kamu yakin ingin menyelesaikan sesi sekarang?`
+        : 'Semua soal telah kamu jawab. Klik "Ya, Lanjutkan" untuk melihat skor akhir dan analisis pembahasan.';
+      pendingModalAction = () => {
+        submitQuiz();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('custom-modal').classList.add('hidden');
+      pendingModalAction = null;
+    }
+
+    document.getElementById('modal-confirm-btn').onclick = function () {
+      if (pendingModalAction) {
+        const fn = pendingModalAction;
+        closeModal();
+        fn();
+      }
+    };
+
+    function submitQuiz() {
+      clearInterval(timerInterval);
+      isReviewMode = true;
+
+      let totalCorrect = 0;
+      let pgCorrect = 0;
+      let pgkCorrect = 0;
+
+      const subbabStats = {};
+
+      questionsData.forEach((q, idx) => {
+        if (!subbabStats[q.subbab]) {
+          subbabStats[q.subbab] = { total: 0, correct: 0 };
+        }
+        subbabStats[q.subbab].total++;
+
+        if (isAnswerCorrect(idx)) {
+          totalCorrect++;
+          subbabStats[q.subbab].correct++;
+          if (q.type === 'pg') pgCorrect++;
+          else pgkCorrect++;
+        }
+      });
+
+      const score = Math.round((totalCorrect / questionsData.length) * 100);
+      let predicate = 'Perlu Bimbingan';
+      if (score >= 90) predicate = 'Sangat Baik (Mahir)';
+      else if (score >= 75) predicate = 'Baik (Cakap)';
+      else if (score >= 60) predicate = 'Cukup (Layak)';
+
+      document.getElementById('final-score').textContent = score;
+      document.getElementById('final-predicate').textContent = predicate;
+      document.getElementById('stat-correct').textContent = totalCorrect;
+      document.getElementById('stat-wrong').textContent = questionsData.length - totalCorrect;
+      document.getElementById('stat-pg').textContent = `${pgCorrect}/18`;
+      document.getElementById('stat-pgk').textContent = `${pgkCorrect}/7`;
+
+      // Render analisis per subbab
+      const topicContainer = document.getElementById('topic-analysis');
+      topicContainer.innerHTML = '';
+
+      Object.keys(subbabStats).sort().forEach((subbab) => {
+        const data = subbabStats[subbab];
+        const pct = Math.round((data.correct / data.total) * 100);
+        const row = document.createElement('div');
+        row.innerHTML = `
+          <div class="flex justify-between font-semibold text-slate-800 mb-1">
+            <span>${subbab}</span>
+            <span>${data.correct}/${data.total} Soal (${pct}%)</span>
+          </div>
+          <div class="w-full h-2.5 bg-emerald-200/70 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-700 rounded-full" style="width: ${pct}%"></div>
+          </div>
+        `;
+        topicContainer.appendChild(row);
+      });
+
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function enterReviewMode() {
+      isReviewMode = true;
+      currentIndex = 0;
+
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      modeBadge.textContent = 'MODE TINJAUAN PEMBAHASAN LENGKAP';
+      modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-teal-100 text-teal-900 border border-teal-300';
+
+      document.getElementById('timer-box').classList.add('hidden');
+      document.getElementById('timer-box').classList.remove('flex');
+      document.getElementById('legend-doubt').classList.add('hidden');
+      document.getElementById('legend-eval').classList.remove('hidden');
+
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function resetToHome() {
+      clearInterval(timerInterval);
+      isReviewMode = false;
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
